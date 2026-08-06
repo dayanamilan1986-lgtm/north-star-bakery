@@ -1,0 +1,404 @@
+/* ==========================================================================
+   North Star Bakery — Stylesheet
+   Colors: cream #FBF3E7, brown #5B3A29, peach #E3956B, charcoal #2F2A26
+   Fonts: 'Fraunces' (headings), 'Nunito Sans' (body)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-cream: #fbf3e7;
+  --color-brown: #5b3a29;
+  --color-peach: #e3956b;
+  --color-charcoal: #2f2a26;
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Nunito Sans", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------- Header and Navigation ------------------------- */
+
+header {
+  background-color: var(--color-brown);
+  padding: 1rem;
+}
+
+header img[alt="North Star Bakery logo"] {
+  max-width: 140px;
+  margin: 0 auto 1rem;
+}
+
+header picture img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  color: var(--color-cream);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--color-peach);
+  color: var(--color-charcoal);
+}
+
+/* -------------------------------- Main ----------------------------------- */
+
+main {
+  padding: 1.5rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-brown);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-brown);
+  font-size: 1.4rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-peach);
+  padding-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-style: italic;
+  color: var(--color-brown);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+audio,
+video {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* -------------------------------- Form ------------------------------------ */
+
+form {
+  background-color: #ffffff;
+  border: 1px solid var(--color-peach);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-family: var(--font-heading);
+  color: var(--color-brown);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #cbb8a3;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-peach);
+  outline-offset: 2px;
+}
+
+button[type="submit"] {
+  background-color: var(--color-peach);
+  color: var(--color-charcoal);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-brown);
+  color: var(--color-cream);
+}
+
+/* -------------------------------- Pre-Order Feature ------------------------------------ */
+
+.add-to-preorder {
+  background-color: var(--color-brown);
+  color: var(--color-cream);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-preorder:hover,
+.add-to-preorder:focus {
+  background-color: var(--color-peach);
+  color: var(--color-charcoal);
+}
+
+#preorder-widget {
+  background-color: #ffffff;
+  border: 1px solid var(--color-peach);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+#preorder-list {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.preorder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecdfd0;
+}
+
+.remove-item {
+  background: none;
+  border: 1px solid var(--color-peach);
+  color: var(--color-brown);
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.remove-item:hover,
+.remove-item:focus {
+  background-color: var(--color-peach);
+  color: var(--color-charcoal);
+}
+
+#preorder-total {
+  font-weight: 700;
+  color: var(--color-brown);
+  margin-top: 0.5rem;
+}
+
+.preorder-continue-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-brown);
+  font-weight: 700;
+}
+
+/* -------------------------------- Saved Picks Banner ------------------------------------ */
+
+.saved-picks-banner {
+  background-color: #fdece0;
+  border: 1px solid var(--color-peach);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.clear-list-btn {
+  background: none;
+  border: 1px solid var(--color-brown);
+  color: var(--color-brown);
+  border-radius: 6px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.clear-list-btn:hover,
+.clear-list-btn:focus {
+  background-color: var(--color-brown);
+  color: var(--color-cream);
+}
+
+/* -------------------------------- Form Validation ------------------------------------ */
+
+.error-message {
+  display: block;
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.input-error {
+  border-color: #b3261e;
+  outline: 2px solid #b3261e;
+}
+
+.form-confirmation {
+  background-color: #eaf5e9;
+  border: 1px solid #6b9c68;
+  color: #2f5030;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* -------------------------------- Footer ----------------------------------- */
+
+footer {
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Responsive layout — small tablets / large phones
+   ========================================================================== */
+
+@media (min-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.9rem;
+  }
+
+  main {
+    padding: 2rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   Responsive layout — larger screens
+   ========================================================================== */
+
+@media (min-width: 700px) {
+  header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  header img[alt="North Star Bakery logo"] {
+    margin: 0;
+  }
+
+  header picture {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  main {
+    padding: 2.5rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  section[aria-labelledby="breads"],
+  section[aria-labelledby="pastries"],
+  section[aria-labelledby="cakes"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main img {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

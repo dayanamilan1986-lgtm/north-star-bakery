@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>North Star Bakery | Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<img src="assets/bakery-logo.png" alt="North Star Bakery logo">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Contact North Star Bakery</h1>
+<p>Have a question, or want to get a pre order in? Fill out the form below and someone from our team will get back to you, usually within a day. If you are ordering a custom cake, try to reach out at least forty eight hours ahead since those take some planning. Otherwise, our hours and location are listed further down if you would rather just stop by.</p>
+
+<section aria-labelledby="inquiry-form">
+<h2 id="inquiry-form">Send Us a Request</h2>
+
+<div id="saved-picks-banner" class="saved-picks-banner" hidden>
+<p><strong>Picked up on the Products page:</strong> <span id="saved-picks-summary"></span></p>
+<button type="button" id="clear-saved-list" class="clear-list-btn">Clear saved list</button>
+</div>
+
+<form id="contact-form" action="#" method="post" novalidate>
+<fieldset>
+<legend>Pre Order and Inquiry Form</legend>
+
+<p>
+<label for="name">Full Name</label><br>
+<input type="text" id="name" name="name" minlength="2">
+<span class="error-message" id="name-error" aria-live="polite"></span>
+</p>
+
+<p>
+<label for="email">Email Address</label><br>
+<input type="email" id="email" name="email">
+<span class="error-message" id="email-error" aria-live="polite"></span>
+</p>
+
+<p>
+<label for="pickup-date">Preferred Pickup Date</label><br>
+<input type="date" id="pickup-date" name="pickup-date">
+<span class="error-message" id="pickup-date-error" aria-live="polite"></span>
+</p>
+
+<p>
+<label for="request-type">Request Type</label><br>
+<select id="request-type" name="request-type" required>
+<option value="">Select one</option>
+<option value="pre-order">Pre Order</option>
+<option value="general-question">General Question</option>
+</select>
+</p>
+
+<p>
+<label for="item-details">Item Details</label><br>
+<textarea id="item-details" name="item-details" rows="4" placeholder="What would you like, and how much?"></textarea>
+<span class="error-message" id="item-details-error" aria-live="polite"></span>
+</p>
+
+<p>
+<label for="allergy-notes">Allergy Notes (if applicable)</label><br>
+<textarea id="allergy-notes" name="allergy-notes" rows="3" placeholder="Anything we should know about allergies or dietary needs"></textarea>
+</p>
+
+<p id="form-confirmation" class="form-confirmation" hidden></p>
+
+<p>
+<button type="submit">Submit Request</button>
+</p>
+</fieldset>
+</form>
+</section>
+
+<section aria-labelledby="location-info">
+<h2 id="location-info">Location and Hours</h2>
+<p>We are at 214 Maple Street, right next to the community park, and there is usually street parking available if you catch us outside the morning rush. Hours are Tuesday through Sunday, 7 a.m. to 3 p.m., closed Mondays. If the form is not your thing, you are welcome to just call the bakery directly.</p>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 North Star Bakery. 214 Maple Street. Open Tuesday through Sunday, 7:00 a.m. to 3:00 p.m.</p>
+</footer>
+</body>
+</html>

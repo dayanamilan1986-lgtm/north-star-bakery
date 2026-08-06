@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>North Star Bakery | Products</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<img src="assets/bakery-logo.png" alt="North Star Bakery logo">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Our Products</h1>
+<p>What is in the case changes a bit from day to day, since we only bake what we can sell fresh and do not hold anything overnight. We do not have online ordering set up, so the prices below are more of a general range than a fixed menu. If you are shopping for something specific, especially a cake, it is worth reaching out through the contact page first so we can tell you what is realistic for the date you need.</p>
+
+<img src="assets/bakery-bread.jpg" alt="A row of freshly baked artisan breads lined up on a bakery shelf">
+
+<section aria-labelledby="breads">
+<h2 id="breads">Breads</h2>
+<p>The Signature Loaf is the one people ask for by name, but we also keep a whole wheat and a soft potato roll on hand most days, the potato roll especially goes fast with sandwich shops nearby. Depending on the season we will bake something extra, rosemary olive oil in the fall, cinnamon raisin swirl closer to the holidays. Bread runs somewhere between four and nine dollars, depending mostly on size.</p>
+<button type="button" class="add-to-preorder" data-add-item="loaf">Add Signature Loaf – $7.00</button>
+<button type="button" class="add-to-preorder" data-add-item="wheat">Add Whole Wheat Loaf – $6.00</button>
+</section>
+
+<section aria-labelledby="pastries">
+<h2 id="pastries">Pastries</h2>
+<p>Croissants come out of the oven first thing, and they are laminated over a few days rather than rushed, which is the only reason they hold that flaky layered texture. We also do fruit danishes, scones, muffins, and cinnamon rolls, the last one being a favorite for anyone stopping in before work. Most pastries run three to six dollars each, and we can box up an assortment if you are picking up for an office or a group.</p>
+<button type="button" class="add-to-preorder" data-add-item="cinnamon-roll">Add Cinnamon Roll – $5.00</button>
+</section>
+
+<section aria-labelledby="cakes">
+<h2 id="cakes">Cakes</h2>
+<p>We build custom cakes for birthdays, anniversaries, whatever the occasion calls for, and we also keep a small rotation of ready made cakes available by the slice for anyone who did not plan that far ahead. Flavors stick to the basics, vanilla and chocolate, plus a fruit cake that changes with what is in season. Custom orders need at least forty eight hours notice. Pricing starts around twenty five dollars for a ready made cake and climbs from there depending on size and design for a full custom order.</p>
+<button type="button" class="add-to-preorder" data-add-item="cake-slice">Add Cake Slice – $6.00</button>
+</section>
+
+<section aria-labelledby="preorder-list-heading" id="preorder-widget">
+<h2 id="preorder-list-heading">Your Pre-Order List</h2>
+<p>Add items above to start building a pre-order list. When you are ready, head to the Contact page and your picks will already be waiting in the request form.</p>
+<ul id="preorder-list" aria-live="polite"></ul>
+<p id="preorder-empty">Your pre-order list is empty. Add an item above to get started.</p>
+<p id="preorder-total" aria-live="polite"></p>
+<a href="contact.html" class="preorder-continue-link">Continue to Contact Form</a>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 North Star Bakery. 214 Maple Street. Open Tuesday through Sunday, 7:00 a.m. to 3:00 p.m.</p>
+</footer>
+</body>
+</html>
